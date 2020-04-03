@@ -8,7 +8,13 @@
 - 翻页或者浏览进行鼠标移动，页面下拉等操作模拟真实用户。
 - 找到指定站点进行浏览下拉，点击内链。
 
-- 使用方法如以下代码:
+- 使用方法如下:
+
+- 安装好chrome和下载对应版本的chromedriver。
+
+- `pip install -r requirements.txt` 安装项目依赖.
+
+- 代码需要修改关键词列表, 网站域名, chromedriver路径，main.py代码如下:
 
 ```python
 from search import PcSearch
@@ -25,6 +31,8 @@ if __name__ == '__main__':
     app = PcSearch(browser=browser, keys=keys, site=site)
     app.run()
 ```
+
+- `python main.py` 运行即可。
 
 ## 付费版说明:
 
